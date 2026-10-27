@@ -1,0 +1,10 @@
+# Configurazione per Render (piano gratuito). Vedi docs/ONLINE.md
+services:
+  - type: web
+    name: stringbound-server
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
